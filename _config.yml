@@ -1,0 +1,12 @@
+# Site settings
+title: Dennis Heibült
+email: dennis@csshugs.com
+description: >
+  This is the website of Dennis Heibült, a web developer living in Bremen, Germany
+baseurl: ""
+url: "http://dennisheibuelt.com"
+twitter_username: csshugs
+github_username:  csshugs
+
+# Build settings
+markdown: kramdown
