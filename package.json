@@ -1,0 +1,18 @@
+{
+  "name": "dennisheibuelt.com",
+  "version": "0.1.0",
+  "description": "The personal site of Dennis Heibült.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csshugs/dennisheibuelt.com.git"
+  },
+  "author": "Dennis Heibült",
+  "license": "CC-BY-ND-4.0",
+  "homepage": "https://dennisheibuelt.com",
+  "scripts": {
+    "eleventy": "node ./node_modules/@11ty/eleventy/cmd.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1"
+  }
+}
