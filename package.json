@@ -10,7 +10,7 @@
   "license": "CC-BY-ND-4.0",
   "homepage": "https://dennisheibuelt.com",
   "scripts": {
-    "eleventy": "rm -rf _site/ && node ./node_modules/@11ty/eleventy/cmd.js"
+    "eleventy": "rm -rf _site/ && npx eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1"
