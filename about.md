@@ -1,1 +1,0 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus vel ipsam fugit a, officiis voluptas explicabo architecto totam tempore assumenda quidem neque dolorem corporis ab adipisci libero, incidunt modi eligendi.

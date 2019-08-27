@@ -1,0 +1,12 @@
+<h2>Posts:</h2>
+<nav>
+    <ul>
+        {{#each collections.post }}
+            <li>
+                <a href="{{ this.url }}">
+                    {{ this.data.title }} ({{ this.data.publish-date }})
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+</nav>

@@ -1,3 +1,10 @@
+---
+layout: default.hbs
+title: A blog post for everyone
+tags: post
+publish-date: 29.01.2019
+---
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur id animi optio modi dicta impedit. [Magni fugiat sunt](https://example.com) eaque esse iste, sapiente voluptatibus, fugit quibusdam magnam numquam, ad. At, nihil!
 
 ## Section 1
