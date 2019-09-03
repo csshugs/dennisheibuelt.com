@@ -5,14 +5,14 @@ tags: post
 publish-date: 29.01.2019
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur id animi optio modi dicta impedit. [Magni fugiat sunt](https://example.com) eaque esse iste, sapiente voluptatibus, fugit quibusdam magnam numquam, ad. At, nihil!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur id animi optio modi dicta impedit. [Magni fugiat sunt](https://example.com) eaque esse iste, sapiente `voluptatibus`, fugit quibusdam magnam numquam, ad. At, nihil!
 
 ## Section 1
 
 Lorem ipsum dolor sit amet, [consectetur adipisicing](https://example.com) elit. Aspernatur soluta obcaecati culpa. Dolorum facere, voluptate tenetur ad inventore. Nam ipsa unde eligendi laborum voluptatibus sapiente quidem dolores, inventore ad porro.
 
 - foo
-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, error laudantium aliquid quo amet quisquam quos voluptas ipsam cum mollitia, in nulla labore ea facere a! Reprehenderit eos odio, fuga!
+- Lorem ipsum dolor sit amet, consectetur <kbd>cmd + c</kbd> adipisicing elit. Voluptate, error laudantium aliquid quo amet quisquam quos voluptas ipsam cum mollitia, in nulla labore ea facere a! Reprehenderit eos odio, fuga!
 - bar
 
 ```html

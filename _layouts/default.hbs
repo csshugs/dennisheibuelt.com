@@ -5,19 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I’m Dennis Heibült, a web developer from Bremen, Germany. I’m writing about front-end architecture and workflow optimisation.">
     <title>Dennis Heibült</title>
+    <style>
+        html {
+            background-color: #fcfcfc;
+            color: #222;
+            font-size: 16px;
+        }
+
+        @media screen and (min-width: 480px) {
+            html {
+                font-size: calc(16px + (20 - 16) * ((100vw - 480px) / (1480 - 480)));
+            }
+        }
+
+        @media screen and (min-width: 1480px) {
+            html {
+                font-size: 20px;
+            }
+        }
+
+        body {
+            margin: 0;
+        }
+
+        a {
+            color: #2a628f;
+        }
+
+        code,
+        kbd {
+            padding: 0.125rem 0.25rem;
+            border-radius: 0.125rem;
+            font-size: 0.85em;
+        }
+
+        code {
+            background-color: #eaeaea;
+        }
+
+        kbd {
+            display: inline-block;
+            background-color: #2a628f;
+            color: #fcfcfc;
+            transform: skewX(-12deg);
+        }
+
+        pre {
+            padding: 0.5rem;
+            border-radius: 0.125rem;
+            background-color: #eaeaea;
+        }
+
+        pre code {
+            padding: 0;
+            border-radius: 0;
+            background-color: transparent;
+            font-size: 0.85em;
+        }
+
+        .o-page-wrap {
+            max-width: 40rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .c-page-head {
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .c-site-nav {
+            display: flex;
+            max-width: 40rem;
+            margin: 0 auto;
+            padding: 0;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            list-style: none;
+        }
+
+        .c-site-nav li:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        .c-site-nav a {
+            color: inherit;
+            text-decoration: none;
+            line-height: 3rem;
+        }
+
+        .c-link-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-top: 1px solid #eaeaea;
+        }
+
+        .c-link-list li {
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .c-link-list a {
+            display: flex;
+            justify-content: space-between;
+            line-height: 2rem;
+            color: #2a628f;
+            text-decoration: none;
+        }
+
+        .c-link-list__meta {
+            font-size: 0.85em;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>
-            <a href="/">
-                dennisheibuelt.com
-            </a>
-        </h1>
+    {{> page-head }}
 
-        <hr>
-    </header>
+    <main class="o-page-wrap">
+        {{#if title}}
+            <h1>{{ title }}</h1>
+        {{/if}}
 
-    <main>
         {{{ content }}}
     </main>
 </body>
