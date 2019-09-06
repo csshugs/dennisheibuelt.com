@@ -1,8 +1,9 @@
 ---
-layout: default.hbs
+layout: default.njk
 title: A blog post for everyone
 tags: post
-publish-date: 29.01.2019
+publishDate: 29.01.2019
+date: 2019-01-29
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur id animi optio modi dicta impedit. [Magni fugiat sunt](https://example.com) eaque esse iste, sapiente `voluptatibus`, fugit quibusdam magnam numquam, ad. At, nihil!

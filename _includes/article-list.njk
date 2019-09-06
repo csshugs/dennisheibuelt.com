@@ -1,0 +1,17 @@
+<h2>Latest posts:</h2>
+<nav>
+    <ul class="c-link-list">
+        {%- for post in collections.post | reverse -%}
+            <li>
+                <a href="{{ post.url }}">
+                    <span class="c-link-list__text">
+                        {{ post.data.title }}
+                    </span>
+                    <span class="c-link-list__meta">
+                        ({{ post.data.publishDate }})
+                    </span>
+                </a>
+            </li>
+        {%- endfor -%}
+    </ul>
+</nav>
