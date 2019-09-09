@@ -163,6 +163,14 @@
             font-size: 1.2rem;
             content: "tl;dr:";
         }
+
+        .u-visually-hidden {
+            position: absolute;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px);
+        }
     </style>
 </head>
 <body>
@@ -174,7 +182,9 @@
         {% endif %}
 
         {% if tldr %}
+            <h2 class="u-visually-hidden">Post summary:</h2>
             <p class="c-tldr">{{ tldr }}</p>
+            <h2 class="u-visually-hidden">Main post content:</h2>
         {% endif %}
 
         {{ content | safe }}
