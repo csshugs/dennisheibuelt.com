@@ -142,11 +142,24 @@
             text-decoration: none;
         }
 
+        @media screen and (max-width: 720px) {
+            .c-link-list a {
+                flex-direction: column;
+            }
+        }
+
         .c-link-list__text {
             margin-right: 0.833rem;
         }
 
+        @media screen and (max-width: 720px) {
+            .c-link-list__text {
+                margin-bottom: 0.402rem;
+            }
+        }
+
         .c-link-list__meta {
+            flex-shrink: 0;
             font-size: 0.833em;
         }
 
