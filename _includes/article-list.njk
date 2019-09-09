@@ -7,9 +7,9 @@
                     <span class="c-link-list__text">
                         {{ post.data.title }}
                     </span>
-                    <span class="c-link-list__meta">
+                    <time class="c-link-list__meta" datetime="{{ post.date }}">
                         ({{ post.data.publishDate }})
-                    </span>
+                    </time>
                 </a>
             </li>
         {%- endfor -%}

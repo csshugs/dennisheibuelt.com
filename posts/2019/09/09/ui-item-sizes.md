@@ -3,8 +3,8 @@ layout: default.njk
 tags: post
 title: Keeping consistency of element’s heights
 tldr: You should create a set of sizes for UI elements in your project, so you are more consistent when it comes to the height of individual elements and the overall vertical appearance of your UI.
-publishDate: 06.09.2019 
-date: 2019-09-06
+publishDate: 9. September 2019
+date: 2019-09-09
 ---
 
 One thing you should definitely do in your project is to manage all your spacings with a proper system in place, meaning that you have a defined set of spacing values that you can pick from instead of using fixed `px` values for every instance you assign a `padding` or a `margin` in your CSS. For this you may want to use a preprocessor like [Sass](https://sass-lang.com) or you can use [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*). The reasoning for this is to avoid hoarding a whole slew of different values for spacings that could be reduced to a minimum set of actually needed values. By storing every spacing variant in a list or as a simple variable, you create a set of allowed spacings that can be used in your project. And the next time you need to assign a `margin-bottom` to a component, you don’t write:
