@@ -148,6 +148,20 @@
         .c-link-list__meta {
             font-size: 0.833em;
         }
+
+        .c-tldr {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-top: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
+            font-weight: bold;
+        }
+
+        .c-tldr::before {
+            display: block;
+            font-size: 1.2rem;
+            content: "tl;dr:";
+        }
     </style>
 </head>
 <body>
@@ -156,6 +170,10 @@
     <main class="o-page-wrap">
         {% if title %}
             <h1>{{ title }}</h1>
+        {% endif %}
+
+        {% if tldr %}
+            <p class="c-tldr">{{ tldr }}</p>
         {% endif %}
 
         {{ content | safe }}
