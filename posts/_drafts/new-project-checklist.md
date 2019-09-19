@@ -14,7 +14,10 @@ Go to `.git/config` in the project folder and add:
 [user]
     name = John Doe
     email = john_doe@example.com
+    signingkey = xxxxxxxxxxxxx
 ```
+
+- `signingkey` for GPG keys (if you have several different ones)
 
 to override the global Git settings, which may contain your personal email address.
 
