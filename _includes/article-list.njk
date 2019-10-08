@@ -1,6 +1,6 @@
-<h2>Latest posts:</h2>
-<nav>
-    <ul class="c-link-list">
+<nav class="c-link-list">
+    <h2 class="c-link-list__title">Latest posts:</h2>
+    <ul class="c-link-list__list">
         {%- for post in collections.post | reverse -%}
             <li>
                 <a href="{{ post.url }}">
