@@ -6,7 +6,7 @@ A good hook can be the combination of a common problem you are going to provide 
 
 ## Provide an informative intro
 
-Incorporate your hook into an intro paragraph describing what the reader can expect from the article. As hooked as the reader should be, they still need to know why they are here to read your article.
+Incorporate your hook into an intro paragraph describing what the reader can expect from the article. As hooked as the reader should be, they still need to know why they are here to read your article. What are they about to learn from this and is this article the one they’ve actually searched for?
 
 ## Use graphics and other media
 
