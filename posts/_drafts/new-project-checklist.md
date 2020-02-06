@@ -49,3 +49,7 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 ```
+
+## `.npmrc`
+
+- Fixed versions
