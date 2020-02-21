@@ -5,7 +5,7 @@
             <li>
                 <a href="{{ post.url }}">
                     <span class="c-link-list__text">
-                        {{ post.data.title }}
+                        {{ post.data.title | safe }}
                     </span>
                     <time class="c-link-list__meta" datetime="{{ post.date }}">
                         ({{ post.data.publishDate }})
