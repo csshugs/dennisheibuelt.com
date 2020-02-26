@@ -111,6 +111,14 @@
             font-size: 0.833em;
         }
 
+        li {
+            list-style-position: inside;
+        }
+
+        li:not(:last-child) {
+            margin-bottom: 0.833rem;;
+        }
+
         .o-page-wrap {
             max-width: 40rem;
             margin-left: auto;
@@ -132,6 +140,10 @@
             padding-left: 1rem;
             padding-right: 1rem;
             list-style: none;
+        }
+
+        .c-site-nav li {
+            margin-bottom: 0;
         }
 
         .c-site-nav li:not(:last-child) {
@@ -162,6 +174,7 @@
 
         .c-link-list li {
             border-bottom: 1px solid #eaeaea;
+            margin-bottom: 0;
         }
 
         .c-link-list a {
