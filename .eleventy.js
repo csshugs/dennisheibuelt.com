@@ -1,6 +1,15 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
+    let markdownIt = require("markdown-it");
+    let markdownItAnchor = require("markdown-it-anchor");
+    let options = {
+        html: true
+    };
+    let markdownLib = markdownIt(options).use(markdownItAnchor);
+
+    eleventyConfig.setLibrary("md", markdownLib);
+
     eleventyConfig.addPlugin(syntaxHighlight);
 
     // Find and copy any `.jpg` files, maintaining directory structure.
