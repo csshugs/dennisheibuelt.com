@@ -1,15 +1,19 @@
 <nav class="c-image-wall">
     <h1 class="c-image-wall__title">Daily Photos</h1>
     <ul class="c-image-wall__list">
-        {%- for photo in collections.photo | reverse -%}
-            <li>
-                <a href="{{ photo.url }}">
-                    <img alt="" src="{{ photo.url }}/{{ photo.fileSlug }}-320.jpg" loading="lazy" aria-hidden="true">
-                    <span class="u-visually-hidden">
-                        Daily photo {{ photo.data.title }}, uploaded on <time datetime="{{ photo.date }}">{{ photo.data.publishDate }}</time>.
-                    </span>
-                </a>
-            </li>
+        {%- for year in dailyphotos | reverse -%}
+            {%- for month in year.months | reverse -%}
+                {%- for photo in month.days | reverse -%}
+                    <li>
+                        <a href="/dailyphoto/{{ photo.year }}/{{ photo.month }}/{{ photo.day }}/{{ photo.index }}/">
+                            <img alt="" src="/dailyphoto/{{ photo.year }}/{{ photo.month }}/{{ photo.day }}/{{ photo.index }}/{{ photo.index }}-320.jpg" loading="lazy" aria-hidden="true">
+                            <span class="u-visually-hidden">
+                                Daily photo {{ photo.title }}, uploaded on <time datetime="{{ photo.year }}-{{ photo.month }}-{{ photo.day }}">{{ photo.day }}. {{ photo.monthName | capitalize }} {{ photo.year }}</time>.
+                            </span>
+                        </a>
+                    </li>
+                {%- endfor -%}
+            {%- endfor -%}
         {%- endfor -%}
     </ul>
 </nav>

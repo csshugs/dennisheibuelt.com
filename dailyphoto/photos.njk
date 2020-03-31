@@ -1,0 +1,32 @@
+---js
+{
+    pagination: {
+        data: "dailyphotos",
+        size: 1,
+        alias: "dailyphoto",
+        before: function(data) {
+            var newData = [];
+            data.forEach(year => {
+                var yearString = year.year;
+                year.months.forEach(month => {
+                    var monthString = month.month;
+                    var monthNameString = month.name;
+                    month.days.forEach(day => {
+                        newData.push(day);
+                        day.year = yearString;
+                        day.month = monthString;
+                        day.monthName = monthNameString;
+                    });
+                });
+            });
+            return newData;
+        }
+    },
+    permalink: "dailyphoto/{{ dailyphoto.year }}/{{ dailyphoto.month }}/{{ dailyphoto.day }}/{{ dailyphoto.index }}/"
+}
+---
+<header class="c-page-title">
+    <h1 class="c-page-title__title">{{ dailyphoto.title | safe }}</h1>
+    <time class="c-page-title__meta" datetime="{{ dailyphoto.year }}-{{ dailyphoto.month }}-{{ dailyphoto.day }}">{{ dailyphoto.day }}. {{ dailyphoto.monthName | capitalize }} {{ dailyphoto.year }}</time>
+</header>
+{% image dailyphoto.index, dailyphoto.description %}
