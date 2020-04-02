@@ -161,6 +161,12 @@
                         "index": "000025",
                         "title": "#25",
                         "description": "Shelf full of books."
+                    },
+                    {
+                        "day": "02",
+                        "index": "000026",
+                        "title": "#26",
+                        "description": "A cat looking up into the camera."
                     }
                 ]
             }
