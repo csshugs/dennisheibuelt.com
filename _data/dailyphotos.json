@@ -167,6 +167,12 @@
                         "index": "000026",
                         "title": "#26",
                         "description": "A cat looking up into the camera."
+                    },
+                    {
+                        "day": "03",
+                        "index": "000027",
+                        "title": "#27",
+                        "description": "A hacky sack."
                     }
                 ]
             }
