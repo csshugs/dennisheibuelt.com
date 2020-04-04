@@ -173,6 +173,12 @@
                         "index": "000027",
                         "title": "#27",
                         "description": "A hacky sack."
+                    },
+                    {
+                        "day": "04",
+                        "index": "000028",
+                        "title": "#28",
+                        "description": "A black surface."
                     }
                 ]
             }
