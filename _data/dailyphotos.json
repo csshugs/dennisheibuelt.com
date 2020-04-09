@@ -203,6 +203,12 @@
                         "index": "000032",
                         "title": "#32",
                         "description": "The moon in the morning behind some shrubbery."
+                    },
+                    {
+                        "day": "09",
+                        "index": "000033",
+                        "title": "#33",
+                        "description": "A cat."
                     }
                 ]
             }
