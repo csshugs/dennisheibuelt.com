@@ -209,6 +209,12 @@
                         "index": "000033",
                         "title": "#33",
                         "description": "A cat."
+                    },
+                    {
+                        "day": "10",
+                        "index": "000034",
+                        "title": "#34",
+                        "description": "A plant in front of a window."
                     }
                 ]
             }
