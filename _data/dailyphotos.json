@@ -239,6 +239,12 @@
                         "index": "000038",
                         "title": "#38",
                         "description": "A piece of grey fabric."
+                    },
+                    {
+                        "day": "15",
+                        "index": "000039",
+                        "title": "#39",
+                        "description": "A section of a command line window."
                     }
                 ]
             }
