@@ -263,6 +263,12 @@
                         "index": "000042",
                         "title": "#42",
                         "description": "Flower soil on the ground."
+                    },
+                    {
+                        "day": "19",
+                        "index": "000043",
+                        "title": "#43",
+                        "description": "A hand-drawn picture."
                     }
                 ]
             }
