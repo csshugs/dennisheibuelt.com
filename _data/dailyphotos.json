@@ -281,6 +281,12 @@
                         "index": "000045",
                         "title": "#45",
                         "description": "A cat’s paw."
+                    },
+                    {
+                        "day": "22",
+                        "index": "000046",
+                        "title": "#46",
+                        "description": "A red surface."
                     }
                 ]
             }
