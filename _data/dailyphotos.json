@@ -497,6 +497,12 @@
                         "index": "000080",
                         "title": "#80",
                         "description": "A cat from the back."
+                    },
+                    {
+                        "day": "27",
+                        "index": "000081",
+                        "title": "#81",
+                        "description": "Silver."
                     }
                 ]
             }
