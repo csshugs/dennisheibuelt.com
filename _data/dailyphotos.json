@@ -529,6 +529,18 @@
                         "description": "Window blinds."
                     }
                 ]
+            },
+            {
+                "month": "06",
+                "name": "june",
+                "days": [
+                    {
+                        "day": "01",
+                        "index": "000086",
+                        "title": "#86",
+                        "description": "A blossom."
+                    }
+                ]
             }
         ]
     }
