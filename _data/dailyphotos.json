@@ -593,6 +593,12 @@
                         "index": "000095",
                         "title": "#95",
                         "description": "A silver disc."
+                    },
+                    {
+                        "day": "11",
+                        "index": "000096",
+                        "title": "#96",
+                        "description": "Blue bars."
                     }
                 ]
             }
