@@ -1,0 +1,22 @@
+---
+layout: iceland.njk
+title: Island 2020
+---
+
+<ul class="c-article-list">
+    {%- for post in collections.iceland | reverse -%}
+        <li class="c-article-list__item">
+            <a class="c-article-list__link" href="{{ post.url }}">
+                <header class="c-article-list__heading">
+                    <h2 class="c-article-list__title">
+                        {{ post.data.title | safe }}
+                    </h2>
+                </header>
+                <img class="c-article-list__img" src="{{ post.data.thumbnail }}" alt="">
+                <time class="c-article-list__meta" datetime="{{ post.date }}">
+                    {{ post.data.publishDate }}
+                </time>
+            </a>
+        </li>
+    {%- endfor -%}
+</ul>

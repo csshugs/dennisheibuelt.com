@@ -15,6 +15,15 @@ module.exports = function(eleventyConfig) {
     // Find and copy any `.jpg` files, maintaining directory structure.
     eleventyConfig.addPassthroughCopy("dailyphoto/**/*.jpg");
 
+    // Find and copy any `.jpg` files, maintaining directory structure.
+    eleventyConfig.addPassthroughCopy("posts/iceland/**/*.jpg");
+
+    // Generate inline images.
+    eleventyConfig.addShortcode("img", function(name, alt, position, link) {
+        return `<a title="Click to view large version" href="${link}"><img class="c-img  c-img--${position}" alt="${alt}"
+src="${name}"></a>`;
+    });
+
     // Generate responsive image block.
     eleventyConfig.addShortcode("image", function(name, alt) {
         return `<img alt="${alt}"
